@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1st website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="section" id="navbar">
+        <div class="section-container">
+            <div id="logo">oskar</div>
+            <nav>
+                <ul id="menu-items">
+                    <li class="menu-item"><a href="#logo">Home</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#music">Music</a></li>
+                    <li class="menu-item"><a href="">Videos</a></li>
+                    <li class="menu-item"><a href="">Quote</a></li>
+                    <li class="menu-item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <div class="section-container">
+            <div id="hero-image"></div>
+            <div id="hero-text">
+                <h1>Website</h1>
+                <h1>about me</h1>
+                <p>Music Portfolio</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="music">
+        <div class="section-container" id="back-image">
+            <div id="about-block">
+               <h2>About oskar</h2>
+               <h6>A Life Steeped in Sound</h6>
+               <input type=button onClick="parent.location='index.html'" value='Get in Touch' id="get">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="music-player">
+        <div class="content" id="back-image2">
+            <audio id="myAudio">
+            <source src="music.ogg" type="audio/ogg">
+            <source src="music.mp3" type="audio/mpeg">
+            </audio>
+                                            
+            <img src ="photos/play.png" id="play" onclick="playAudio()" />
+            
+            <div id="volume" onmouseover="volume_(true)" onmouseout="volume_(false)">
+                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1" >
+                <img src ="photos/volume.png" id="vlm"/>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="slider">
+        <div class="slide_photo_container">
+            <div id="play_video">
+                <img src="photos/1.png" />
+                <span id="play_video_text">Play Video</span>
+            </div>
+
+            <div class="mySlides">            
+                <img src="./slider_images/first.png" />
+                <span class="img_text">Video Channel</span>
+            </div>
+
+            <div class="mySlides">            
+                <img  src="./slider_images/second.png" />
+                <span class="img_text">Deueling Pianos</span>
+
+            </div>
+
+            <div class="mySlides">            
+                <img src="./slider_images/third.png" />
+                <span class="img_text">Rock in Rotterdam</span>
+
+            </div>
+
+            <div class="mySlides">            
+                <img src="./slider_images/forth.png" />
+                <span class="img_text">Classical Covers</span>
+
+            </div>
+                  
+            <img src="photos/left-arrow.png" class="left" onclick="plusDivs(-1)">
+            <img src="photos/right-arrow.png" class="right" onclick="plusDivs(1)">
+        </div>
+    </div>
+    <div class="section" id="slider2">
+        <div class="mySlides2">
+            <div class="sliderimages1" onmouseover="slider2(true)" onmouseout="slider2(false)">
+                <img class="sliderimages" src="./slider2_images/1.png" />
+                <div class="img_content">
+                    <span>Jazz Jam / 00:29</span>
+                     <div class="play_video1">
+                        <img src="photos/1s.png" />
+                        <span class="play_video_text1">Play Video</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sliderimages1" onmouseover="slider2(true)" onmouseout="slider2(false)">
+                <img class="sliderimages" src="./slider2_images/2.png" />
+                <!-- <div class="img_content">
+                    <span>Jazz Jam / 00:29</span>
+                    <br>
+                    <div class="play_video">
+                        <img src="./1s.png" />
+                        <span class="play_video_text">Play Video</span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="sliderimages1">
+                <img class="sliderimages" src="./slider2_images/3.png" />
+            </div>
+        </div>
+        <div class="mySlides2">
+            <div class="sliderimages1">
+                <img class="sliderimages" src="./slider2_images/4.png" />
+            </div>
+            <div class="sliderimages1">
+                <img class="sliderimages" src="./slider2_images/5.png" />
+            </div>
+            <div class="sliderimages1">
+                <img class="sliderimages" src="./slider2_images/6.png" />
+            </div>
+        </div>
+
+        <img src="photos/left-arrow.png" class="left" id="left1" onclick="plusDivs2(-1)">
+        <img src="photos/right-arrow.png" class="right" id="right1" onclick="plusDivs2(1)">
+    </div>
+    <div class="section" id="train_station">
+        <img src="./train_station.png"/>
+    </div>
+    <div class="section" id="contact">
+        <div id="contact_text">
+            <span id="CT_h1">Contact</span>
+            <span id="CT_h2">
+                <p id="CT_h2">500 Terry Francois Street San Francisco, CA 94158</p>
+                <p id="CT_h2">oskarrr991@gmail.com</p>
+                <p id="CT_h2"> 123-456-7890</p>
+            </span>
+        </div>
+        <div id="contact_photo">
+            <img src="photos/contact_pic.png"/>
+        </div>
+    </div>
+    <div class="section" id="map">
+        <img src="photos/map.png"/>
+    </div>
+    <div class="section" id="footer">
+        <img id="footer_img" src="./social/fb_logo.png">
+        <img id="footer_img" src="./social/twitter-logo.png">
+        <img id="footer_img" src="./social/linkedin-logo.png">
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
